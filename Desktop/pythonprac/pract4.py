@@ -27,4 +27,6 @@ for key,value in newlist.items():
     print(key,value)
 
 
-
+"""
+what i learned here is that i can acess subkeys in dictionary by doing dictionaryname[firstkey][subkey]
+"""
