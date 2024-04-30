@@ -1,6 +1,6 @@
 class inventory:
 
-    def init(self, item,qunatity):
+    def __init__(self, item,qunatity):
         self.invdec={}
         self.item=item
         self.qunatity=qunatity
@@ -34,10 +34,11 @@ my_inventory2 = inventory("hotchips", 9)
 
 my_inventory.add("chips", 7)
 my_inventory2.add("hotchips", 9)
-
+my_inventory2.add("hotchipslol", 9)
 my_inventory.search("chips")
+my_inventory2.remove("hotchipslol")
 my_inventory2.search("hotchips")
-
-my_inventory.viewall()
+my_inventory2.update("hotchips",20)
+my_inventory2.viewall()
 
 
